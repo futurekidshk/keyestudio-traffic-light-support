@@ -21,6 +21,10 @@ namespace keyestudioTrafficLight {
      * @param green The pin connected to the green light.
      */
     //% block="set pins R: $red, Y: $yellow, G: $green"
+    //% weight=100
+    //% red.defl=DigitalPin.P2
+    //% yellow.defl=DigitalPin.P1
+    //% green.defl=DigitalPin.P0
     export function setPins(red: DigitalPin, yellow: DigitalPin, green: DigitalPin): void {
         red |= DigitalPin.P2;
         yellow |= DigitalPin.P1;
